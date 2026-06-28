@@ -12,6 +12,7 @@ export async function onRequest(context) {
     MAPS_URL: env.MAPS_URL || "",
     YT_LIVE_LINK: env.YT_LIVE_LINK || "",
     YT_EMBED_INLINE: env.YT_EMBED_INLINE === "true" || env.YT_EMBED_INLINE === true,
+    RSVP_URL: env.RSVP_URL || "",
   };
 
   const tag = `<script>window.WED_ENV=${JSON.stringify(cfg)};</script>`;

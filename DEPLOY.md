@@ -19,6 +19,10 @@ always opens the same location as the button — no separate QR file to manage.
 | `MAPS_URL`        | yes      | `https://www.google.com/maps/place/St.+Stephen's+Parish+Hall/...` |
 | `YT_LIVE_LINK`    | yes      | `https://www.youtube.com/watch?v=XXXXXXXXXXX`                   |
 | `YT_EMBED_INLINE` | optional | `true` to play inside the box (your own stream with embedding ON), else `false`/unset for poster mode |
+| `RSVP_URL`        | yes      | Google Apps Script web-app URL (ends in `/exec`) — see `rsvp-google-apps-script.gs` |
+
+If `RSVP_URL` is not set, the RSVP submit button is disabled ("RSVP opening soon").
+RSVP responses land in your Google Sheet (one row per guest).
 
 ## Option A — Deploy from Git (recommended)
 
